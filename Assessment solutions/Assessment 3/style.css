@@ -1,0 +1,15 @@
+#main {
+  animation-name: name;
+  animation-duration: 2s;
+  /* specify the animation property you want to animate */
+  animation-timing-function: ease-out;
+}
+
+@keyframes name {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

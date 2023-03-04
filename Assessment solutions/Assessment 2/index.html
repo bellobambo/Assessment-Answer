@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body style="text-align: center; font-family: monospace; font-size: larger;" >
+    <h1> <label for="lga-select">Select Local Government:</label>
+        <p>to view polling unit</p>
+    </h1>
+    <select id="my-select" style="outline: none;">
+        <option>Aniocha North - <span>Total Polling Unit: 12</span> </option>
+        <option>Aniocha  South - <span>Total Polling Unit: 20</span> </option>
+        <option>Ethiope East - <span>Total Polling Unit: 19</span> </option>
+        <option>Ika North  East - <span>Total Polling Unit: 11</span> </option>
+        <option>Ndokwa West - <span>Total Polling Unit:7</span> </option>
+        <option>Oshimili  North - <span>Total Polling Unit: 23</span></option>
+        <option>Ughelli North - <span>Total Polling Unit: 13</span> </option>
+        <option>Bomadi - <span>Total Polling Unit: 13</span></option>
+        <option>Burutu - <span>Total Polling Unit: 11</span> </option>
+        <option>Warri South West - <span>Total Polling Unit:9</span></option>
+        <!-- Add more options for other LGAs as needed -->
+    </select>
+
+    <h2 id="selected-option" style="color: rgb(204, 107, 107);"></h2>
+
+    <script>
+        const select = document.getElementById('my-select');
+        const selectedOption = document.getElementById('selected-option');
+
+        select.addEventListener('change', function () {
+            selectedOption.textContent = select.value;
+        });
+
+    </script>
+
+</body>
+
+</html>
